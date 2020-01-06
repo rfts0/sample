@@ -1,0 +1,636 @@
+/*
+------------------------------------------------
+RESET
+------------------------------------------------
+*/
+
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*
+------------------------------------------------
+COMMON
+------------------------------------------------
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', 'Meiryo','ＭＳ Ｐゴシック','MS PGothic';
+  color: #222;
+}
+
+header {
+  background-color: #327D58;
+  width: 100%;
+  height: 80px ;
+  border-bottom: 1px solid #fff;
+}
+
+.container {
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  
+}
+
+.menu-icon {
+  color: white;
+  /* float: right; */
+  font-size: 25px;
+  padding: 35px 0;
+}  
+
+.header-left {
+  margin-top: 10px;
+  height: 60px;
+}
+
+.container p {
+  font-size: 20px;
+  font-family:'Meiryo';
+  font-weight: bold;
+  color: white;
+}
+
+.header-right {
+  height: 60px;
+  margin-top: 10px;
+  display: none;
+}
+
+.header-right ul {
+  /* border: 1px solid black; */
+  margin: 0;
+  height: 60px;
+  list-style: none;
+  display: flex;
+}
+
+.header-right img {
+  height: 60px;
+  width: 130px;
+}
+
+.header-right li {
+  margin-left: 20px;
+  width: 100%;
+}
+
+.header-right a {
+  background: pink;
+  line-height: 60px;
+  text-align: center;
+  display: block;
+}
+
+/*
+------------------------------------------------
+TOP
+------------------------------------------------
+*/
+.top {
+  background-color: #327D58;
+}
+
+.top-main {
+  display: flex;
+  margin: 0 auto;
+  /* border: 1px solid white; */
+}
+
+.top-left {
+  /* border: 1px solid white; */
+}
+
+.top-left img{
+  margin-top: 35px;
+  /* border: 1px solid white; */
+}
+
+.top-left h1{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 85px;
+  text-align: center;
+  color: #fff;
+  background: #FDD41F;
+  border-radius: 30px;
+  margin-top: 65px;
+}
+
+.top-left p {
+  /* font-weight: bold; */
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 30px;
+  margin-top: 82px;
+  display: block;
+  /* border: 1px solid white; */
+}
+
+.scroll {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto ;
+  /* border: 1px solid #fff; */
+}
+
+.top-right {
+  /* border: 1px solid white; */
+}
+
+.top-right img {
+  /* border: 1px solid white; */
+}
+
+/*
+------------------------------------------------
+SERVICE
+------------------------------------------------
+*/
+/* .services {
+  border: 1px solid black;
+} */
+
+.service-title {
+  background-color: #327D58;
+  height: 120px;
+  /* border: 1px solid black; */
+}
+
+.sec-wrapper {
+  background-color: #327D58;
+  height: 120px;
+}
+.sec {
+  background-image: url(../image/service/service-title.png);
+  width: 540px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.section-title {
+  padding-top: 50px;
+  padding-bottom: 65px;
+  text-align: center;
+
+  /* border: 1px solid black; */
+}
+
+
+.section-title h1{
+  font-family: Meiryo;
+  font-style: normal;
+  /* line-height: 50px; */
+  font-weight: bold;
+  font-size: 36px;
+  display: inline-block;
+  /* margin-top: 50px; */
+  /* border: 1px solid black; */
+}
+
+.section-title h2{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  display: block;
+  /* border: 1px solid black; */
+}
+
+.services {
+  display: flex;
+  text-align: center;
+  width: 1440px;
+  margin: 10px auto;
+
+}
+.service {
+  width: 400px;
+  height: 470px;
+  left: 420px;
+  top: 0px;
+  margin: 100px auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  /* position: relative; */
+}
+
+.lp {
+  background: #E2ECBA;
+}
+
+.rp {
+  background: #CDE8E9;
+}
+
+.ud {
+  background: #CEE7D7;
+}
+.service h3 {
+  font-family: Meiryo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  display: block;
+  margin-top: 30px;
+}
+.service img {
+  /* position: absolute; */
+  top: 120px;
+}
+
+.service p {
+  font-family: Meiryo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  display: block;
+  width: 300px;
+  height: 80px;
+  margin: 40px 50px;
+  color: black;
+}
+.service-message {
+  height: 50px;
+  /* border: 1px solid black; */
+}
+
+.service-message p {
+  font-family: Meiryo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.service-message span {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  border-radius: 60px;
+  padding: 10px 40px;
+  margin: 0 10px;
+}
+
+.de {
+  background-color: #CDD866;
+}
+
+.co {
+  background-color: #94D0C9;
+}
+
+.wr {
+  background-color: #00803D;
+}
+
+.service-btn {
+  width: 300px;
+  height: 60px;
+  background: #FDD41F;
+  border: 1px solid #FFFFFF;
+  border-radius: 13px;
+  display: block;
+  font-family: Meiryo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 15px;
+  margin: 65px auto;
+  color: #FFFFFF;
+}
+
+/*
+------------------------------------------------
+About us
+------------------------------------------------
+*/
+
+#about{
+  background-image: url("../image/about/about-bg.png");
+  background-size: cover;
+  height: 810px;
+}
+
+.about-wrapper {
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+.about-title {
+  width: 540px;
+  /* height: 120px; */
+  text-align: center;
+  padding-top:100px;
+  /* padding-bottom: 27px; */
+  margin: 0 auto ;
+  color: white;
+  /* border: 1px solid red; */
+}
+
+.about-title h1{
+  font-family: Meiryo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  display: inline-block;
+  margin-top: 0px;
+  /* border: 1px solid black; */
+}
+
+.about-title h2{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  display: block;
+  /* border: 1px solid black; */
+}
+.about-messege {
+  font-family: Meiryo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  display: block;
+  text-align: center;
+  margin: 27px auto;
+  width: 740px;
+  height: 420px;
+  /* border: 1px solid black; */
+}
+
+/*
+------------------------------------------------
+WORKS
+------------------------------------------------
+*/
+.works-wrapper {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.skills {
+  width: 1200px;
+  margin: 65px auto;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.skills p {
+  font-family: Meiryo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 120px;
+  text-align: center;
+  color: #000000;
+  width: 522px;
+  /* border: 1px solid red; */
+}
+
+/*
+------------------------------------------------
+Price
+------------------------------------------------
+*/
+
+.price-wapper {
+  width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 65px;
+  background-image: url(../image/price/price-bg.png);
+  background-size: cover;
+}
+
+.price-wapper p {
+  font-family: Meiryo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center; 
+  color: #000000;
+  width: 650px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0;
+  width: 800px;
+}
+table tr {
+  /* background-color: #fff; */
+  background-color:rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid #fff;
+}
+table tr:nth-child(even){
+  background-color: #eee;
+}
+table th,
+table td {
+  padding: .35em 1em;
+}
+table thead th {
+    font-size: .85em;
+    padding: 1em;
+}
+table thead tr{
+  background-color: #fd6767;
+  color:#fff;
+}
+table tbody th {
+  text-align: left;
+  font-size: .8em;
+}
+.txt{
+   text-align: left;
+   font-size: .75em;
+}
+.price{
+  text-align: right;
+  color: #FF7043;
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+    width:100%
+  }
+  table th{
+    background-color: #fd6767;
+    display: block;
+    border-right: none;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    display: block;
+    margin-bottom: .625em;
+    border: 1px solid #fd6767;
+  }
+  table td {
+    border-bottom: 1px dotted #bbb;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+    position: relative;
+    padding: 1.5em 1em 1.5em 4em;
+    border-right: none;
+  }
+  
+  table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    color: #000;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+  table tbody th {
+    color: #fff;
+    padding: 1em
+}
+  table tr:nth-child(even){
+  background-color: #fff;
+}
+}
+
+/*
+------------------------------------------------
+Contact
+------------------------------------------------
+*/
+
+.contact-wapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-form {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.contact-form p {
+width: 700px;
+height: 30px;
+font-family: Meiryo;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height:30px;
+/* identical to box height */
+color: #000000;
+margin: 0 auto;
+}
+
+input {
+width: 700px;
+margin-top: 10px;
+margin-bottom:30px;
+padding: 16px;
+font-size: 10px;
+border: 1px solid #C4C4C4;
+}
+
+textarea {
+  width: 700px;
+  margin-top: 0px;
+  margin-bottom:30px;
+  padding: 100px;
+  font-size: 16px;
+  border: 1px solid #C4C4C4;
+}
+
+
+.contact-submit {
+  width: 160px;
+  margin-top: 10px;
+  margin-bottom:40px;
+  font-size: 16px;
+  background-color: #C4C4C4
+  color #889eab;  
+  margin: 0 auto;
+  display: block;
+}
+
+.contact-hello {
+  padding-top: 65px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+/*
+------------------------------------------------
+FOOTER
+------------------------------------------------
+*/
+
+footer {
+  background-color: #327D58;
+  width: 100%;
+  height: 80px ;
+  margin-top: 65px;
+  /* border-bottom: 1px solid #fff; */
+}

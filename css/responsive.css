@@ -1,0 +1,17 @@
+
+/* medium screen */
+@media (min-width: 600px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .header-right {
+    display: block;
+  }
+
+}
+
+/* large screen */
+@media (min-width: 800px) {
+
+}  
